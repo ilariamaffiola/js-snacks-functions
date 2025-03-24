@@ -25,3 +25,17 @@ let arrayFiltrato = filterNames(names , 'A');
 
 //Risultato atteso se si passa la lettera A: ["Anna", "Adele", "Alessandra"]
 console.log(arrayFiltrato);
+
+//BONUS
+let arrNomi = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
+const filtraIniziali = (nomi , lettera) =>{
+    let nomiFiltrati = [];
+    for(i=0; i<nomi.length; i++){
+        if(nomi[i].charAt(0) === lettera){
+            nomiFiltrati.push(nomi[i]);
+        }
+    }
+    return nomiFiltrati;
+}
+let arrayFiltratoBonus = filtraIniziali(arrNomi , 'L');
+console.log(arrayFiltratoBonus);
