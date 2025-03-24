@@ -35,3 +35,23 @@ let salutoUtente = saluto(name);
 
 //Risultato atteso se si passa 'Mario' alle 18: // Buonasera Mario.
 console.log(salutoUtente);
+
+//BONUS DEL BONUS
+const nameBonus = 'Ilaria';
+const hello = (stringa) =>{
+    let a = new Date();
+    //controllo se il tutto funziona con un console.log
+    console.log(a.getHours());
+    //inizialized un if che controlla l'ora e restituisce il saluto corretto
+    if(a.getHours() <= 13){
+        return 'Buongiorno' + ' ' + stringa;
+    }
+    else if(a.getHours() >13 && a.getHours() <= 17){
+        return 'Buon Pomeriggio' + ' ' + stringa;
+    }
+    else{
+        return 'Buonasera' + ' ' + stringa;
+    }
+}
+let salutoUtenteBonus = hello(nameBonus);
+console.log(salutoUtenteBonus);
