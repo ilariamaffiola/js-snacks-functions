@@ -14,3 +14,10 @@ let salutoUtente = saluto(userName);
 
 //Risultato atteso se si passa 'Mario': // ciao Mario
 console.log(salutoUtente);
+
+
+
+//BONUS
+const secondName = 'Ilaria';
+const salutare = (nome) => 'Ciao' + ' ' + nome;
+console.log(salutare(secondName));
