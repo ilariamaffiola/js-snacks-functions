@@ -28,3 +28,19 @@ let vocali = countVocali(word);
 
 //Risultato atteso se si passa 'javascript': 3 (a, a, i)
 console.log(vocali);
+
+
+//BONUS
+let parola = 'Dinosauri';
+const contaVocali = (stringa) =>{
+    let vowels = 0 ;
+    for (let i=0; i<stringa.length; i++){
+        console.log(stringa[i]);
+        if(stringa[i] === 'a' || stringa[i] === 'e' || stringa[i] === 'i' || stringa[i] === 'o' || stringa[i] === 'u'){
+            vowels= vowels + 1;
+        }
+    }
+    return vowels;
+}
+let vocaliParola = contaVocali(parola);
+console.log(vocaliParola);
