@@ -23,7 +23,7 @@ function saluto(string){
     else if(d.getHours() >13 && d.getHours() <= 17){
         return 'Buon Pomeriggio' + ' ' + string;
     }
-    else{
+    else if(d.getHours() > 17 && d.getHours() <= 23){
         return 'Buonasera' + ' ' + string;
     }
 
@@ -49,7 +49,7 @@ const hello = (stringa) =>{
     else if(a.getHours() >13 && a.getHours() <= 17){
         return 'Buon Pomeriggio' + ' ' + stringa;
     }
-    else{
+    else if(a.getHours() > 17 && a.getHours() <= 23){
         return 'Buonasera' + ' ' + stringa;
     }
 }
