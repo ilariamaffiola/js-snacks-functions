@@ -4,10 +4,18 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
 
 
 // Dichiara la funzione qui.
-
-
+function firstLetter(names){
+    let iniziali = [];
+    for (let i= 0 ; i<names.length; i++){
+        iniziali.push(names[i].charAt(0));
+    }
+    return iniziali;
+}
+    
 // Invoca la funzione qui e stampa il risultato in console
-
-
-
+let nomiIniziali = firstLetter(names);
+    
+    
 //Risultato atteso: ["A", "L", "M", "A", "G", "A"]
+    
+console.log(nomiIniziali);
